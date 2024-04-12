@@ -78,3 +78,8 @@ spec:
         manifestPath: workflow.yaml
         namespaced: true
         clusterName: ${{ parameters.clusterName }}
+  output:
+    links:
+      - title: Open in catalog
+        icon: catalog
+        entityRef: ${{ steps['register'].output.entityRef }}
