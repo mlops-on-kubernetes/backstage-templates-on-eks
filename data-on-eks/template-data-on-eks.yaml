@@ -2,8 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   description: Creates a EKS cluster with Spark Operator + extra enabled through Terraform
-  name: data-on-eks-spark
-  title: Data on EKS - Spark Operator
+  name: create-data-on-eks-spark
+  title: Create Data on EKS - Spark Operator
 spec:
   owner: guest
   type: service
