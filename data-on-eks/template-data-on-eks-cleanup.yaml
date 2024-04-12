@@ -28,6 +28,17 @@ spec:
           title: name of this entry
           type: string
   steps:
+    - id: fetch-base
+      name: Fetch Base
+      action: fetch:template
+      input:
+        url: ./templates-spark-cleanup/
+        values:
+          name: ${{ parameters.name }}
+          namespace: ${{ parameters.namespace }}
+          tfVars: ${{ parameters.tfVars }}
+          adminRoleName: ${{parameters.adminRoleName}}
+          clusterName: ${{ parameters.clusterName }}
     # Delete GitHub action is not supported by backstage GitHub plugin and should be deleted manually
     # - id: delete-repo 
     #   name: Create Repository
