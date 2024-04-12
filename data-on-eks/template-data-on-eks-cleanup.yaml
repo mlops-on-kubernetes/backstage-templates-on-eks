@@ -25,6 +25,11 @@ spec:
         name:
           title: name of this entry
           type: string
+        adminRoleName:
+          title: Admin Role Name
+          description: Name of the role to give the administrative rights on the EKS cluster.
+          default: Admin
+          type: string
   steps:
     - id: fetch-base
       name: Fetch Base
