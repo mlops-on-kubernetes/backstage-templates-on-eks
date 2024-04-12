@@ -2,8 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   description: Deletes a EKS cluster with Spark Operator + extra enabled through Terraform
-  name: data-on-eks-spark
-  title: Data on EKS - Spark Operator
+  name: delete-data-on-eks-spark
+  title: Delete Data on EKS - Spark Operator
 spec:
   owner: guest
   type: service
@@ -27,27 +27,6 @@ spec:
         name:
           title: name of this entry
           type: string
-        namespace:
-          title: namespace within the kubernetes cluster to deploy this
-          type: string
-          default: data-on-eks
-        adminRoleName:
-          title: Admin Role Name
-          description: Name of the role to give the administrative rights on the EKS cluster.
-          default: Admin
-          type: string
-        clusterName:
-          title: Cluster to run
-          description: The cluster to run this workflow in. 
-          type: string
-          ui:field: KubernetesClusterPicker
-        repoUrl:
-          title: Repository Location
-          type: string
-          ui:field: RepoUrlPicker
-          ui:options:
-            allowedHosts:
-              - github.com
   steps:
     # Delete GitHub action is not supported by backstage GitHub plugin and should be deleted manually
     # - id: delete-repo 
