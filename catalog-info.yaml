@@ -11,3 +11,4 @@ spec:
     - ./spark/template-sa.yaml
     - ./crossplane/template.yaml
     - ./jupyterhub-on-eks/template-jupyterhub-on-eks.yaml
+    - ./jupyterhub-on-eks/template-jupyterhub-on-eks-cleanup.yaml
