@@ -44,7 +44,7 @@ spec:
       name: Fetch Base
       action: fetch:template
       input:
-        url: ./templates-jupyterhub/
+        url: ./templates-jupyterhub-cleanup/
         values:
           name: ${{ parameters.name }}
           namespace: ${{ parameters.namespace }}
