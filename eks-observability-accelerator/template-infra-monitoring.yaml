@@ -78,7 +78,7 @@ spec:
     - action: fetch:template
       id: fetch-base
       input:
-        url: ./templates-infra-monitoring
+        url: ./templates-infra-monitoring/
         values:
           adminRoleName: ${{parameters.adminRoleName}}
           clusterName: ${{ parameters.clusterName }}
