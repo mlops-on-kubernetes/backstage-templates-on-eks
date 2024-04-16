@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   description: Creates a Infra Monitoring Setup with Prometheus and Grafana
-  name: data-on-eks-spark
+  name: eks-observability-oss-infra-mon
   title: EKS Observability - OSS Infra Monitoring
 spec:
   output:
