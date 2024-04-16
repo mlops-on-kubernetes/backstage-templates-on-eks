@@ -12,3 +12,4 @@ spec:
     - ./crossplane/template.yaml
     - ./jupyterhub-on-eks/template-jupyterhub-on-eks.yaml
     - ./jupyterhub-on-eks/template-jupyterhub-on-eks-cleanup.yaml
+    - ./eks-observability-accelerator/template-infra-monitoring.yaml
